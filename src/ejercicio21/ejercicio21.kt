@@ -10,9 +10,12 @@ fun invertirTexto (texto: String):Boolean{
 
 fun main () {
 
-    val texto21= "hola"
-    val  textoReves = invertirTexto(texto21)
-     println("Texto invertido : $textoReves")
+    val texto1= "hola"
+    val texto2="ala"
+    var  textoReves = invertirTexto(texto1)
+    println("Texto invertido : $texto1 es $textoReves")
+    textoReves = invertirTexto(texto2)
+    println("Texto invertido  :$texto2 es  $textoReves")
 
 }
 
