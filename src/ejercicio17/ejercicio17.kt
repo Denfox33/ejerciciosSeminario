@@ -4,7 +4,20 @@ package ejercicio17
 // devuelva una nueva lista con solo paras
 
 fun listaPares(lista: List<Int>): List<Int> {
-    return lista.filter { it % 2 == 0 }
+    var mutableList : MutableList<Int> = mutableListOf()
+    for (i in 0 until lista.size) {
+        // recorrer el arry
+        if(lista[i]%2 ==0 ){
+            val valor = lista[i];
+
+            mutableList.add(valor);
+
+        }       
+    }
+
+
+
+    return mutableList
 }
 
 fun main() {
