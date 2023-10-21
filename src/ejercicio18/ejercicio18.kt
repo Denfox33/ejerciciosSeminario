@@ -6,7 +6,7 @@ fun primos (numero: Int):Boolean {
     }
     for (i in 2 until numero){
         if(numero% i ==0 ){
-            return true
+            return false
         }
     }
     return true
